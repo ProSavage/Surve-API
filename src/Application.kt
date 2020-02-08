@@ -31,7 +31,7 @@ fun Application.module(testing: Boolean = false) {
     }
 
     routing {
-        RoutingRoot(this)
+        RoutingRoot(this, hashMapOf())
         get("/") {
             call.respondText("HELLO WORLD!", contentType = ContentType.Text.Plain)
         }

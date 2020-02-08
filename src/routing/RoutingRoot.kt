@@ -15,17 +15,15 @@ import us.surve.responses.getGenericErrorResponse
 import java.util.*
 import kotlin.collections.HashMap
 
-class RoutingRoot(val routing: Routing) {
+class RoutingRoot(val routing: Routing, val sessions: HashMap<UUID, String>) {
 
-
-    val sessions = HashMap<UUID, String>()
 
     init {
         setupRoutes()
     }
 
     private fun setupRoutes() {
-        routing.get("/login/{email}/{password}") {
+        routing.get("/auth/login/{email}/{password}") {
             println("I got a login request")
             val email = context.parameters["email"]?.toLowerCase()
             val password = context.parameters["password"]
@@ -48,7 +46,7 @@ class RoutingRoot(val routing: Routing) {
             call.respond(mapOf("message" to "Success", "token" to token))
         }
 
-        routing.get("/signup/{email}/{password}") {
+        routing.get("/auth/signup/{email}/{password}") {
             println("I got a sign-up request")
             val email = context.parameters["email"]?.toLowerCase()
             val password = context.parameters["password"]
@@ -60,6 +58,9 @@ class RoutingRoot(val routing: Routing) {
             MongoClient.registerUser(user)
             call.respond(mapOf("message" to "Success"))
         }
+
+
+
     }
 
 
