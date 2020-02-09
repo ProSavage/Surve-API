@@ -1,7 +1,4 @@
 
-;
-package us.surve
-
 data class LocationProperties(val id: Int, val name: String, val location: String, val rating: Int, val foods: ArrayList<Any>)
 
 
