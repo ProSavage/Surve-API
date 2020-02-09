@@ -2,12 +2,11 @@ package us.surve
 
 import io.ktor.application.*
 import io.ktor.response.*
-import io.ktor.request.*
 import io.ktor.features.*
 import io.ktor.routing.*
 import io.ktor.http.*
 import io.ktor.gson.*
-import us.surve.routing.RoutingRoot
+import routing.RoutingRoot
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
