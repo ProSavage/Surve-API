@@ -97,47 +97,46 @@ class RoutingRoot(val routing: Routing, val sessions: HashMap<UUID, String>) {
             call.respond(
                 mapOf(
                     "locations" to arrayListOf(
-                        mapOf(
-                            0 to LocationProperties(
-                                0,
-                                "Bhartiya Restaurant",
-                                "1234 street",
-                                5,
-                                arrayListOf(
-                                    Food(0, "Chicken Chilli", 8.99),
-                                    Food(1, "Tandoori Salmon", 12.0),
-                                    Food(2, "Paneer Tikka Masala", 10.99),
-                                    Food(3, "Aloo Gobhi", 9.99)
-                                )
-                            ),
-                            1 to LocationProperties(
-                                1, "Mexican Restaurant", "4578 Gay St, Opelika AL- 36754", 4,
-                                arrayListOf(
-                                    Food(0, "Linguini with Clams", 23.99),
-                                    Food(1, "Spaghetti Carbonara", 18.0),
-                                    Food(2, "Rigatoni Bolognese Beef", 21.99),
-                                    Food(3, "Rigatoni Bolognese Beef", 21.99)
-                                )
-                            ),
-                            2 to LocationProperties(
-                                2, "Chinese Restaurant", "3467 Corner Auburn AL- 36849", 5,
-                                arrayListOf(
-                                    Food(0, "Taco Burrito, and enchilada",8.00),
-                                    Food(1, "Taco Salad", 8.95),
-                                    Food(2, "Taco and enchilada with rice and beans", 7.00),
-                                    Food(3, "Burrito Supreme", 8.95)
-                                )
-                            ),
-                            3 to LocationProperties(
-                                3, "Italian Restaurant", "9087 University Dr, Opelika AL - 45897", 4,
-                                arrayListOf(
-                                    Food(0, "Sweet and Sour Chicken", 9.99),
-                                    Food(1, "Chicken Broccoli", 7.50),
-                                    Food(2, "Kung Pao Beef", 8.99),
-                                    Food(3, "Szechuan Beef", 7.99)
-                                )
+                        0 to LocationProperties(
+                            0,
+                            "Bhartiya Restaurant",
+                            "1234 street",
+                            5,
+                            arrayListOf(
+                                Food(0, "Chicken Chilli", 8.99),
+                                Food(1, "Tandoori Salmon", 12.0),
+                                Food(2, "Paneer Tikka Masala", 10.99),
+                                Food(3, "Aloo Gobhi", 9.99)
+                            )
+                        ),
+                        1 to LocationProperties(
+                            1, "Mexican Restaurant", "4578 Gay St, Opelika AL- 36754", 4,
+                            arrayListOf(
+                                Food(0, "Linguini with Clams", 23.99),
+                                Food(1, "Spaghetti Carbonara", 18.0),
+                                Food(2, "Rigatoni Bolognese Beef", 21.99),
+                                Food(3, "Rigatoni Bolognese Beef", 21.99)
+                            )
+                        ),
+                        2 to LocationProperties(
+                            2, "Chinese Restaurant", "3467 Corner Auburn AL- 36849", 5,
+                            arrayListOf(
+                                Food(0, "Taco Burrito, and enchilada", 8.00),
+                                Food(1, "Taco Salad", 8.95),
+                                Food(2, "Taco and enchilada with rice and beans", 7.00),
+                                Food(3, "Burrito Supreme", 8.95)
+                            )
+                        ),
+                        3 to LocationProperties(
+                            3, "Italian Restaurant", "9087 University Dr, Opelika AL - 45897", 4,
+                            arrayListOf(
+                                Food(0, "Sweet and Sour Chicken", 9.99),
+                                Food(1, "Chicken Broccoli", 7.50),
+                                Food(2, "Kung Pao Beef", 8.99),
+                                Food(3, "Szechuan Beef", 7.99)
                             )
                         )
+
                     )
                 )
             )
